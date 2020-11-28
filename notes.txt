@@ -1,0 +1,10 @@
+Command line:
+node -v
+npx create-react-app myapp
+(npm install -g create-react-app) // don't use
+npm uninstall -g create-react-app
+
+First App:
+codesandbox.io/s/react-yud4c
+
+Install Node.js
