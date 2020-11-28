@@ -18,8 +18,12 @@ import ReactDOM from 'react-dom';
 // arrow function
 const App = () => {
   // Button string const
+  // objects are not valid as a React Child
+  // but we can show values from an object
   const buttonText = { text: `Don't click` };
   // const string for the label
+  // we can refer the variables in the JSX
+  // we can reference other types of variables, not just strings, including numbers, arrays etc.
   const labelText = `Write something: `;
 
   return (
@@ -36,6 +40,12 @@ const App = () => {
     // we are entering the text with braces and variables
     // we don't need the actual .jsx filename
     // convention: double quotes for jsx properties, single quotes for everything else
+    // we need to use custom inline styling for React
+    // whenever we have any dashes in our styling we need to use snakeCase
+    // we wrap the values in strings
+    // we are using className instead of class for HTML classes
+    // curly braces in JSX are not specifying JS objects
+    // we need to use htmlFor instead of for
     <div>
       <label className="label" htmlFor="name">
         {labelText}
@@ -43,11 +53,6 @@ const App = () => {
       <br />
       <input id="name" type="text" />
       <br />
-      {
-        // we need to use custom inline styling for React
-        // whenever we have any dashes in our styling we need to use snakeCase
-        // we wrap the values in strings
-      }
       <button style={{ backgroundColor: 'pink', color: 'black' }}>
         {buttonText.text}
       </button>
