@@ -1,29 +1,31 @@
-import './SeasonDisplay.css';
-import React from 'react';
+import "./Season.css";
+import React from "react";
 
 const seasonConfig = {
   summer: {
     text: "Let's hit the beach!",
-    iconName: 'sun'
+    iconName: "sun",
   },
   winter: {
-    text: 'Burr it is cold!',
-    iconName: 'snowflake'
-  }
+    text: "Burr it is cold!",
+    iconName: "snowflake",
+  },
 };
 
 const getSeason = (lat, month) => {
   if (month > 2 && month < 9) {
-    return lat > 0 ? 'summer' : 'winter';
+    return lat > 0 ? "summer" : "winter";
   } else {
-    return lat > 0 ? 'winter' : 'summer';
+    return lat > 0 ? "winter" : "summer";
   }
 };
 
-const SeasonDisplay = props => {
+// new functional component
+const Season = (props) => {
   const season = getSeason(props.lat, new Date().getMonth());
   const { text, iconName } = seasonConfig[season];
 
+  // returning the div
   return (
     <div className={`season-display ${season}`}>
       <i className={`icon-left massive ${iconName} icon`} />
@@ -33,4 +35,5 @@ const SeasonDisplay = props => {
   );
 };
 
-export default SeasonDisplay;
+// exporting the component
+export default Season;
