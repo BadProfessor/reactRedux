@@ -1,47 +1,65 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import faker from 'faker';
-import CommentDetail from './CommentDetail';
-import ApprovalCard from './ApprovalCard';
+// import the dependencies for React
+import React from "react";
+import ReactDOM from "react-dom";
+// faker, open source library for mock data
+import faker from "faker";
+// import the components
+// relative path references
+// comment body
+import Comment from "./Comment";
+// approval section
+import Approval from "./Approval";
 
+// new app component
 const App = () => {
   return (
+    // make a div component
+    // ui container comments from semantic UI
+    // default content
     <div className="ui container comments">
-      <ApprovalCard>
+      {/* opening and closing tags to nest content within */}
+      <Approval>
         <div>
-          <h4>Warning!</h4>
-          Are you sure you want to do this?
+          <h4>Bazinga!</h4>
+          Don't press these buttons!
         </div>
-      </ApprovalCard>
+      </Approval>
 
-      <ApprovalCard>
-        <CommentDetail
-          author="Sam"
-          timeAgo="Today at 4:45PM"
-          content="Nice blog post"
-          avatar={faker.image.avatar()}
+      <Approval>
+        {/* taking the Comment
+        treating it as a JSX tag */}
+        {/* We are providing the prop name, and then the value */}
+        <Comment
+          // we are hardcoding values
+          authorOfComment="Ciri"
+          // when was it created
+          timeCreated="Today at 16:20"
+          contentBody="Nice sword"
+          // import the image from the Comments Component
+          avatar={faker.image.cats()}
         />
-      </ApprovalCard>
+      </Approval>
 
-      <ApprovalCard>
-        <CommentDetail
-          author="Alex"
-          timeAgo="Today at 2:00AM"
-          content="I like the subject"
-          avatar={faker.image.avatar()}
+      <Approval>
+        <Comment
+          authorOfComment="Gerald"
+          timeCreated="Yesterday at 06:00"
+          contentBody="Hmm"
+          avatar={faker.image.cats()}
         />
-      </ApprovalCard>
+      </Approval>
 
-      <ApprovalCard>
-        <CommentDetail
-          author="Jane"
-          timeAgo="Yesterday at 5:00PM"
-          content="I like the writing"
-          avatar={faker.image.avatar()}
+      <Approval>
+        <Comment
+          authorOfComment="Yennefer"
+          timeCreated="Yesterday at 17:01"
+          contentBody="I like  lilac and gooseberries."
+          avatar={faker.image.cats()}
         />
-      </ApprovalCard>
+      </Approval>
     </div>
   );
 };
 
-ReactDOM.render(<App />, document.querySelector('#root'));
+// render in in the root id
+ReactDOM.render(<App />, document.querySelector("#root"));

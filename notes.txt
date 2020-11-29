@@ -7,6 +7,7 @@ cd myapp
 npm i
 npm start
 CTRL+C
+npm install --save faker
 
 First App:
 codesandbox.io/s/react-yud4c
@@ -15,7 +16,11 @@ Codepen Website:
 codepen.io/pen
 
 Semantic UI CDN:
+https://cdnjs.com/libraries/semantic-ui
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+
+Semantic UI Site:
+https://semantic-ui.com/
 
 Install Node.js
 

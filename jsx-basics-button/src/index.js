@@ -9,9 +9,9 @@
 // 'react' from which file or folder we are pulling from
 // require are CommonJS modules system import statements
 // import is a ES2015 Module systems
-import React from 'react';
+import React from "react";
 // import ReactDOM, capital DOM
-import ReactDOM from 'react-dom';
+import ReactDOM from "react-dom";
 
 // Create a react component
 // name it App
@@ -20,11 +20,11 @@ const App = () => {
   // Button string const
   // objects are not valid as a React Child
   // but we can show values from an object
-  const buttonText = { text: `Don't click` };
+  const textInTheButton = { text: `Don't click` };
   // const string for the label
   // we can refer the variables in the JSX
   // we can reference other types of variables, not just strings, including numbers, arrays etc.
-  const labelText = `Write something: `;
+  const textInTheLabel = `Write something: `;
 
   return (
     // reutrning a DIV
@@ -48,13 +48,13 @@ const App = () => {
     // we need to use htmlFor instead of for
     <div>
       <label className="label" htmlFor="name">
-        {labelText}
+        {textInTheLabel}
       </label>
       <br />
       <input id="name" type="text" />
       <br />
-      <button style={{ backgroundColor: 'pink', color: 'black' }}>
-        {buttonText.text}
+      <button style={{ backgroundColor: "pink", color: "black" }}>
+        {textInTheButton.text}
       </button>
     </div>
   );
@@ -63,4 +63,4 @@ const App = () => {
 // Take the react component and show it on the screen
 // root id
 // query selector for the root ID
-ReactDOM.render(<App />, document.querySelector('#root'));
+ReactDOM.render(<App />, document.querySelector("#root"));
