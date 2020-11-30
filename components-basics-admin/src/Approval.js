@@ -1,8 +1,8 @@
 // importing the dependencies
-import React from "react";
+import React from 'react';
 
 // functional component
-const Approval = (props) => {
+const Approval = props => {
   console.log(props.children);
   // return statement with parentheses
   return (

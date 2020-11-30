@@ -1,14 +1,14 @@
 // import the dependencies for React
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react';
+import ReactDOM from 'react-dom';
 // faker, open source library for mock data
-import faker from "faker";
+import faker from 'faker';
 // import the components
 // relative path references
 // comment body
-import Comment from "./Comment";
+import Comment from './Comment';
 // approval section
-import Approval from "./Approval";
+import Approval from './Approval';
 
 // new app component
 const App = () => {
@@ -62,4 +62,4 @@ const App = () => {
 };
 
 // render in in the root id
-ReactDOM.render(<App />, document.querySelector("#root"));
+ReactDOM.render(<App />, document.querySelector('#root'));

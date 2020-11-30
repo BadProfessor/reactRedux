@@ -9,6 +9,8 @@ npm audit fix
 npm start
 CTRL+C
 npm install --save faker
+npm install semantic-ui-css
+import 'semantic-ui-css/semantic.min.css’;
 
 First App:
 codesandbox.io/s/react-yud4c

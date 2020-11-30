@@ -1,12 +1,12 @@
 // import React dependencies
-import React from "react";
+import React from 'react';
 
 // react components are written in upper case
 // arrow function
 // props system
 // props short for properties
 // we can call the argument anything, but by convention it is props
-const Comment = (props) => {
+const Comment = props => {
   // logging prop objects
   // console.log(props);
   // return with parentheses

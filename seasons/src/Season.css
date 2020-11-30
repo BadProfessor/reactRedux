@@ -1,34 +1,43 @@
+/*  we are selecting the icon with the class and positioning it on the left */
 .icon-left {
   position: absolute;
+  /* top left hand side */
   top: 10px;
   left: 10px;
 }
 
+/*  we are selecting the icon with the class and positioning it on the right */
 .icon-right {
   position: absolute;
+  /* bottom right hand side */
   bottom: 10px;
   right: 10px;
 }
 
-.season-display.winter i {
+/* winter icon color */
+.season.winter i {
   color: blue;
 }
 
-.season-display.summer i {
+/* summer icon color */
+.season.summer i {
   color: red;
 }
 
-.season-display {
+/* main css */
+.season {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
 
+/* background color for winter */
 .winter {
   background-color: aliceblue;
 }
 
+/* background color for summer */
 .summer {
   background-color: orange;
 }

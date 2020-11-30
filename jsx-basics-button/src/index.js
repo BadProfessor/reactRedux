@@ -9,9 +9,9 @@
 // 'react' from which file or folder we are pulling from
 // require are CommonJS modules system import statements
 // import is a ES2015 Module systems
-import React from "react";
+import React from 'react';
 // import ReactDOM, capital DOM
-import ReactDOM from "react-dom";
+import ReactDOM from 'react-dom';
 
 // Create a react component
 // name it App
@@ -53,7 +53,7 @@ const App = () => {
       <br />
       <input id="name" type="text" />
       <br />
-      <button style={{ backgroundColor: "pink", color: "black" }}>
+      <button style={{ backgroundColor: 'pink', color: 'black' }}>
         {textInTheButton.text}
       </button>
     </div>
@@ -63,4 +63,4 @@ const App = () => {
 // Take the react component and show it on the screen
 // root id
 // query selector for the root ID
-ReactDOM.render(<App />, document.querySelector("#root"));
+ReactDOM.render(<App />, document.querySelector('#root'));
