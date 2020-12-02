@@ -37,6 +37,7 @@ class App extends React.Component {
     );
   }
 
+  // helper method that has conditional statements and are sent to render()
   renderContent() {
     // if we have an error message and no latitude
     if (this.state.errorMessage && !this.state.lat) {
@@ -62,6 +63,8 @@ class App extends React.Component {
   // therefore we need to manage what we are calling
   render() {
     // we are calling the renderContent function
+    // we are always calling the blue border, that's why this is in render and not in the each component
+    // the border blue class doesn't exist, just for show
     return <div className="border blue">{this.renderContent()}</div>;
   }
 }
