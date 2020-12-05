@@ -1,5 +1,8 @@
+// image list css
 import './ImageList.css';
+// importing react
 import React from 'react';
+// Importing Image card component
 import ImageCard from './ImageCard';
 
 // making an arrow function so we bind this property
