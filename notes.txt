@@ -11,6 +11,7 @@ CTRL+C
 npm install --save faker
 npm install semantic-ui-css
 import 'semantic-ui-css/semantic.min.css’;
+npm install --save axios
 
 First App:
 codesandbox.io/s/react-yud4c

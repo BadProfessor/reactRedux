@@ -10,11 +10,15 @@ class SearchBar extends React.Component {
 
   // when we submit the form
   // convention is to write the function as per the change being done in the app
+  // event handler, prevent Default to submit it in the form so it doesn't reload
+  // we can solve the issue with unassigned this with an arrow function
+  // arrow functions automatically bind this
   onFormSubmit = event => {
     // preventing the default
     event.preventDefault();
 
     // changing the state
+    // calling the term
     this.props.onSubmit(this.state.term);
   };
 
@@ -24,6 +28,7 @@ class SearchBar extends React.Component {
       // giving it a segment class
       <div className="ui segment">
         <form
+          // event handler so it doesn't load every time we enter search
           onSubmit={this.onFormSubmit}
           // form class
           className="ui form"

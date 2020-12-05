@@ -1,5 +1,7 @@
+// importing React
 import React from 'react';
 
+// making class based component
 class ImageCard extends React.Component {
   constructor(props) {
     super(props);
@@ -21,6 +23,7 @@ class ImageCard extends React.Component {
     this.setState({ spans });
   };
 
+  // returning/rendering content
   render() {
     const { description, urls } = this.props.image;
 
@@ -32,4 +35,5 @@ class ImageCard extends React.Component {
   }
 }
 
+// exporting the component
 export default ImageCard;
