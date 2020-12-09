@@ -12,6 +12,7 @@ const ImageList = props => {
   const images = props.images.map(image => {
     // we are returning the image id and image
     // returning from the root element
+    // returning the props ffrom the ImageCard
     return <ImageCard key={image.id} image={image} />;
   });
 

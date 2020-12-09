@@ -6,14 +6,15 @@
   /* repeat adds a set number of columns */
   /* each of these columns is minimal of 250px and maximum of 1fr. 1fr = equally sized */
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  /* for the gap between the images */
+  /* for the gap between the images, adding the vertical and horizontal direction */
   grid-gap: 0 10px;
+  /* how talls should be the rows */
   grid-auto-rows: 10px;
 }
 
 .image-list img {
   /* image itself, mostly 250px, add a grid row */
   width: 250px;
-  /*  */
+  /* every image will take up 2 spans */
   grid-row-end: span 2;
 }
