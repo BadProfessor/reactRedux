@@ -11,5 +11,3 @@ export default axios.create({
     Authorization: `Client-ID ${process.env.REACT_APP_ACCESS_KEY}`
   }
 });
-
-console.log(process.env.REACT_APP_ACCESS_KEY);
