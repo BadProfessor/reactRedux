@@ -15,6 +15,10 @@ class App extends React.Component {
     this.onTermSubmit('buildings');
   }
 
+  // when we call the search and we append it to the api
+  // we are adding the callback as a prop
+  // we are making it an async function so it doesn't get stuck
+  // youtube is already preconfigured with axios
   onTermSubmit = async (term) => {
     const response = await youtube.get('/search', {
       params: {
@@ -36,7 +40,9 @@ class App extends React.Component {
   render() {
     return (
       <div className="ui container">
-        {/* calling the SearchBar component */}
+        {/* calling the SearchBar component 
+        we are entering the prop from the onTermSubmit function and adding the parameters
+        */}
         <SearchBar onFormSubmit={this.onTermSubmit} />
         <div className="ui grid">
           <div className="ui row">
