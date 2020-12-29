@@ -9,6 +9,7 @@ import VideoDetail from './VideoDetail';
 
 // class based component
 class App extends React.Component {
+  // initiliazing the state with an empty array of videos, selectVideo is null
   state = { videos: [], selectedVideo: null };
 
   componentDidMount() {
@@ -19,6 +20,7 @@ class App extends React.Component {
   // we are adding the callback as a prop
   // we are making it an async function so it doesn't get stuck
   // youtube is already preconfigured with axios
+  // we are making it async await so that it can get pre-rendered
   onTermSubmit = async (term) => {
     const response = await youtube.get('/search', {
       params: {
@@ -26,6 +28,7 @@ class App extends React.Component {
       },
     });
 
+    // we are setting the state and taking the list of videos inside of response.data.items
     this.setState({
       videos: response.data.items,
       selectedVideo: response.data.items[0],
@@ -50,6 +53,7 @@ class App extends React.Component {
               <VideoDetail video={this.state.selectedVideo} />
             </div>
             <div className="five wide column">
+              {/* we are rendering the list of videos */}
               <VideoList
                 onVideoSelect={this.onVideoSelect}
                 videos={this.state.videos}
