@@ -53,9 +53,12 @@ class App extends React.Component {
               <VideoDetail video={this.state.selectedVideo} />
             </div>
             <div className="five wide column">
-              {/* we are rendering the list of videos */}
+              {/* we are rendering the list of videos 
+              This is right after the search bar
+              */}
               <VideoList
                 onVideoSelect={this.onVideoSelect}
+                // reference to the videos array, we are passing the current state on it
                 videos={this.state.videos}
               />
             </div>
