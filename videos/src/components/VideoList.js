@@ -4,9 +4,13 @@ import React from 'react';
 import VideoItem from './VideoItem';
 
 // making an arrow function
+// entering the props
 const VideoList = ({ videos, onVideoSelect }) => {
+  // we are maping over the videos array
+  // this is going to be a brand new array
   const renderedList = videos.map((video) => {
     return (
+      // we are calling the video item component
       <VideoItem
         key={video.id.videoId}
         onVideoSelect={onVideoSelect}
