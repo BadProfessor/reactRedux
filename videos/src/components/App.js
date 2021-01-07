@@ -35,6 +35,7 @@ class App extends React.Component {
     });
   };
 
+  // this is a call back, the video object is fetched from the Youtube API
   onVideoSelect = (video) => {
     this.setState({ selectedVideo: video });
   };
@@ -57,6 +58,8 @@ class App extends React.Component {
               This is right after the search bar
               */}
               <VideoList
+                // when we select the videos
+                // We are destructuring onVideoSelect
                 onVideoSelect={this.onVideoSelect}
                 // reference to the videos array, we are passing the current state on it
                 videos={this.state.videos}

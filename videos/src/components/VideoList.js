@@ -8,6 +8,7 @@ import VideoItem from './VideoItem';
 const VideoList = ({ videos, onVideoSelect }) => {
   // we are maping over the videos array
   // this is going to be a brand new array
+  // we are iterating over the video prop
   const renderedList = videos.map((video) => {
     return (
       // we are calling the video item component
@@ -19,6 +20,7 @@ const VideoList = ({ videos, onVideoSelect }) => {
     );
   });
 
+  // importing the styling from Semantic UI
   return <div className="ui relaxed divided list">{renderedList}</div>;
 };
 

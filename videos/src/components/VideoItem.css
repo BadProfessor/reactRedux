@@ -1,9 +1,14 @@
+/* separate CSS file to keep the styling simple */
 .video-item {
+  /* image should be centered and not too large
+  flex, center, and making the cursor pointer
+  */
   display: flex !important;
   align-items: center !important;
   cursor: pointer;
 }
 
 .video-item.item img {
+  /* limiting the width */
   max-width: 180px;
 }
