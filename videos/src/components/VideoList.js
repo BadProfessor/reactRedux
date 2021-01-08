@@ -12,6 +12,7 @@ const VideoList = ({ videos, onVideoSelect }) => {
   const renderedList = videos.map((video) => {
     return (
       // we are calling the video item component
+      // adding a it select and the actual video
       <VideoItem
         key={video.id.videoId}
         onVideoSelect={onVideoSelect}

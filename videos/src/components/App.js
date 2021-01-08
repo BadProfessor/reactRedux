@@ -12,6 +12,7 @@ class App extends React.Component {
   // initiliazing the state with an empty array of videos, selectVideo is null
   state = { videos: [], selectedVideo: null };
 
+  // when the component mounts, we are entering the detault search term
   componentDidMount() {
     this.onTermSubmit('buildings');
   }
@@ -29,6 +30,7 @@ class App extends React.Component {
     });
 
     // we are setting the state and taking the list of videos inside of response.data.items
+    // we are adding also the selected video items at 0
     this.setState({
       videos: response.data.items,
       selectedVideo: response.data.items[0],
@@ -37,6 +39,7 @@ class App extends React.Component {
 
   // this is a call back, the video object is fetched from the Youtube API
   onVideoSelect = (video) => {
+    // load the selected Video
     this.setState({ selectedVideo: video });
   };
 
@@ -51,6 +54,7 @@ class App extends React.Component {
         <div className="ui grid">
           <div className="ui row">
             <div className="eleven wide column">
+              {/* we are putting between the search bar and the video list. We areare getting the video from the selected video */}
               <VideoDetail video={this.state.selectedVideo} />
             </div>
             <div className="five wide column">
