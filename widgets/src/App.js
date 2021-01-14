@@ -1,5 +1,6 @@
 // importing React and the useState hook
 import React, { useState } from 'react';
+// import the components
 import Accordion from './components/Accordion';
 import Search from './components/Search';
 import Dropdown from './components/Dropdown';
@@ -45,6 +46,7 @@ export default () => {
     <div>
       <Header />
       <Route path="/">
+        {/* accordion component pasted with the items */}
         <Accordion items={items} />
       </Route>
       <Route path="/list">
