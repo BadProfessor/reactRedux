@@ -4,8 +4,11 @@ import React, { useState } from 'react';
 // pushing the dynamic array with props
 // returning JSX
 const Accordion = ({ items }) => {
+  // we are using useState and setting as null
+  // useState = state system inside of a functional component
   const [activeIndex, setActiveIndex] = useState(null);
 
+  // we are setting the index
   const onTitleClick = (index) => {
     setActiveIndex(index);
   };
@@ -17,6 +20,7 @@ const Accordion = ({ items }) => {
       // adding the React Fragment that contains the JSX element and we are mapping over it
       <React.Fragment key={item.title}>
         {/* styilying for the div AND onClick function */}
+        {/* display the Title on the click */}
         <div className={`title ${active}`} onClick={() => onTitleClick(index)}>
           <i className="dropdown icon"></i>
           {item.title}
