@@ -5,9 +5,10 @@ import axios from 'axios';
 
 // making the component
 const Search = () => {
-  // importing state, and default value
+  // importing state, and default state value
   const [term, setTerm] = useState('programming');
   const [debouncedTerm, setDebouncedTerm] = useState(term);
+  // saving in the state an array of objects for results
   const [results, setResults] = useState([]);
 
   // we are setting timeOut
@@ -27,6 +28,7 @@ const Search = () => {
   useEffect(() => {
     // making a const function with async and axios
     const search = async () => {
+      // taking the data out of the response
       const { data } = await axios.get('https://en.wikipedia.org/w/api.php', {
         params: {
           action: 'query',
@@ -43,8 +45,12 @@ const Search = () => {
     search();
   }, [debouncedTerm]);
 
+  // every result we got back and we are builing results out of them
+  // mapping over the results
   const renderedResults = results.map((result) => {
     return (
+      // mapped divs
+      // pushing the content on the right and giving the ui button and the link
       <div key={result.pageid} className="item">
         <div className="right floated content">
           <a
@@ -56,6 +62,7 @@ const Search = () => {
         </div>
         <div className="content">
           <div className="header">{result.title}</div>
+          {/* don't use this, hidden feature by React Team. It can be used for XSS Attacks. Any time we are taking a string from a third party API we could be introducing a security threat */}
           <span dangerouslySetInnerHTML={{ __html: result.snippet }}></span>
         </div>
       </div>
