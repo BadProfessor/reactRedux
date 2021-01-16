@@ -50,6 +50,7 @@ export default () => {
         <Accordion items={items} />
       </Route>
       <Route path="/list">
+        {/* importing the Search component */}
         <Search />
       </Route>
       <Route path="/dropdown">

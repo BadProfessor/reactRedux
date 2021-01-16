@@ -1,19 +1,26 @@
+// importing React and hook system
 import React, { useState, useEffect } from 'react';
+// importing Axios for APIs
 import axios from 'axios';
 
+// making the component
 const Search = () => {
+  // importing state, and default value
   const [term, setTerm] = useState('programming');
   const [debouncedTerm, setDebouncedTerm] = useState(term);
   const [results, setResults] = useState([]);
 
+  // we are setting timeOut
   useEffect(() => {
     const timerId = setTimeout(() => {
       setDebouncedTerm(term);
     }, 1000);
 
+    // returning timer ID after the timeOut
     return () => {
       clearTimeout(timerId);
     };
+    // empty array
   }, [term]);
 
   useEffect(() => {
@@ -52,8 +59,11 @@ const Search = () => {
     );
   });
 
+  // return the form
   return (
+    // creating the div
     <div>
+      {/* creating the form, label and input */}
       <div className="ui form">
         <div className="field">
           <label>Enter Search Term</label>
@@ -69,4 +79,5 @@ const Search = () => {
   );
 };
 
+// exporting the component
 export default Search;

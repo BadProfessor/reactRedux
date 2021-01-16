@@ -14,6 +14,7 @@ const Accordion = ({ items }) => {
   };
 
   const renderedItems = items.map((item, index) => {
+    // is this equal to active piece of state, if yes we assign active, if not empty string
     const active = index === activeIndex ? 'active' : '';
 
     return (
@@ -25,7 +26,7 @@ const Accordion = ({ items }) => {
           <i className="dropdown icon"></i>
           {item.title}
         </div>
-        {/* where we are displaying the content */}
+        {/* where we are displaying the content. We are adding the content and the active index */}
         <div className={`content ${active}`}>
           <p>{item.content}</p>
         </div>
