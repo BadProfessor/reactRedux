@@ -23,7 +23,9 @@ const Search = () => {
     // empty array
   }, [term]);
 
+  // making a useEffect function to get axios get request from Wikipedia
   useEffect(() => {
+    // making a const function with async and axios
     const search = async () => {
       const { data } = await axios.get('https://en.wikipedia.org/w/api.php', {
         params: {
@@ -37,6 +39,7 @@ const Search = () => {
 
       setResults(data.query.search);
     };
+    // calling immediately the function
     search();
   }, [debouncedTerm]);
 
