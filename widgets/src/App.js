@@ -23,6 +23,7 @@ const items = [
   },
 ];
 
+// an array of options. This is static. Each object has a label of value.
 const options = [
   {
     label: 'The Color Red',
@@ -40,6 +41,7 @@ const options = [
 
 // exporting the default arrow function
 export default () => {
+  // from useState for the dropdown, the default value is 0
   const [selected, setSelected] = useState(options[0]);
 
   return (
@@ -54,10 +56,13 @@ export default () => {
         <Search />
       </Route>
       <Route path="/dropdown">
+        {/* Dropdown component with the label, options and the selection */}
         <Dropdown
           label="Select a color"
           options={options}
+          // what is selected right now
           selected={selected}
+          // updated piece of state
           onSelectedChange={setSelected}
         />
       </Route>
