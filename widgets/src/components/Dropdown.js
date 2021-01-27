@@ -5,11 +5,13 @@ import React, { useState, useEffect, useRef } from 'react';
 const Dropdown = ({ label, options, selected, onSelectedChange }) => {
   // state for the open and and closed dropdown
   const [open, setOpen] = useState(false);
+  // defining ref object
   const ref = useRef();
 
+  // only should run once
   useEffect(() => {
     const onBodyClick = (event) => {
-      if (ref.current.contains(event.target)) {
+      if (ref.current && ref.current.contains(event.target)) {
         return;
       }
 
@@ -21,6 +23,7 @@ const Dropdown = ({ label, options, selected, onSelectedChange }) => {
     return () => {
       document.body.removeEventListener('click', onBodyClick);
     };
+    // second argument is an empty array
   }, []);
 
   const renderedOptions = options.map((option) => {
@@ -43,6 +46,7 @@ const Dropdown = ({ label, options, selected, onSelectedChange }) => {
   // returning the JSX
   return (
     // returning the form
+    // making a reference for the div
     <div ref={ref} className="ui form">
       <div className="field">
         <label className="label">{label}</label>

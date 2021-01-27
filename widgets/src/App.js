@@ -42,11 +42,13 @@ const options = [
 // exporting the default arrow function
 export default () => {
   // from useState for the dropdown, the default value is 0
+  // we are checking if it was selected or not
   const [selected, setSelected] = useState(options[0]);
 
   return (
     <div>
       <Header />
+      {/* accordion components with its pathnames */}
       <Route path="/">
         {/* accordion component pasted with the items */}
         <Accordion items={items} />
@@ -67,6 +69,7 @@ export default () => {
         />
       </Route>
       <Route path="/translate">
+        {/* translate component */}
         <Translate />
       </Route>
     </div>

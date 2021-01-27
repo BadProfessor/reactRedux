@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 
+// props for the path
 const Route = ({ path, children }) => {
   const [currentPath, setCurrentPath] = useState(window.location.pathname);
 
@@ -15,6 +16,7 @@ const Route = ({ path, children }) => {
     };
   }, []);
 
+  // checking if we have the component route
   return currentPath === path ? children : null;
 };
 

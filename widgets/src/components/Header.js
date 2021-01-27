@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from './Link';
 
+// header component for the links to the routes
 const Header = () => {
   return (
     <div className="ui secondary pointing menu">
