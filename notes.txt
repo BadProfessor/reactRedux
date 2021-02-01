@@ -15,6 +15,15 @@ npm install --save axios
 console.developers.google.com/apis/dashboard
 developers.google.com/youtube/v3/search/list
 npm install axios@0.20.0
+npm install -g vercel
+vercel login
+vercel
+vercel --prod
+
+
+VideoHooks app:
+https://videoshooks.badprofessor.vercel.app/
+https://videoshooks-one.vercel.app/
 
 First App:
 codesandbox.io/s/react-yud4c
