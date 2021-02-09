@@ -2,6 +2,7 @@ import React from 'react';
 import SongList from './SongList';
 import SongDetail from './SongDetail';
 
+// returning a simple div with the SongList and SongDetails components
 const App = () => {
   return (
     <div className="ui container grid">

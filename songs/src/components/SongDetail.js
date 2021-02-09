@@ -6,6 +6,7 @@ const SongDetail = ({ song }) => {
     return <div>Select a song</div>;
   }
 
+  // returning a simple div with the song details, titles and duration
   return (
     <div>
       <h3>Details for:</h3>

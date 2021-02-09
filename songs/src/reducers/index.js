@@ -1,5 +1,6 @@
 import { combineReducers } from 'redux';
 
+// static list of songs
 const songsReducer = () => {
   return [
     { title: 'No Scrubs', duration: '4:05' },
@@ -9,6 +10,8 @@ const songsReducer = () => {
   ];
 };
 
+// no selected songs
+// if we select a song, return the value
 const selectedSongReducer = (selectedSong = null, action) => {
   if (action.type === 'SONG_SELECTED') {
     return action.payload;
@@ -17,6 +20,7 @@ const selectedSongReducer = (selectedSong = null, action) => {
   return selectedSong;
 };
 
+// put them together
 export default combineReducers({
   songs: songsReducer,
   selectedSong: selectedSongReducer
