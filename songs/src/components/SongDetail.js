@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
+// the last component with the details that we are going to input into the list
 const SongDetail = ({ song }) => {
   if (!song) {
     return <div>Select a song</div>;
