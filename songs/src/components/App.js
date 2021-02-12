@@ -1,4 +1,5 @@
 import React from 'react';
+// importing the components
 import SongList from './SongList';
 import SongDetail from './SongDetail';
 
@@ -10,7 +11,9 @@ const App = () => {
         <div className="column eight wide">
           <SongList />
         </div>
+        {/* style for the song detail, within a div */}
         <div className="column eight wide">
+          {/* component */}
           <SongDetail />
         </div>
       </div>
