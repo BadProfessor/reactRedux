@@ -1,8 +1,10 @@
+// importing dependencies and components
 import React from 'react';
 import { connect } from 'react-redux';
 import { fetchPostsAndUsers } from '../actions';
 import UserHeader from './UserHeader';
 
+// class based component
 class PostList extends React.Component {
   componentDidMount() {
     this.props.fetchPostsAndUsers();
@@ -25,6 +27,7 @@ class PostList extends React.Component {
     });
   }
 
+  // rendering the result
   render() {
     return <div className="ui relaxed divided list">{this.renderList()}</div>;
   }
@@ -34,6 +37,7 @@ const mapStateToProps = state => {
   return { posts: state.posts };
 };
 
+// connect fuction with PostList
 export default connect(
   mapStateToProps,
   { fetchPostsAndUsers }
