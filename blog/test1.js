@@ -1,7 +1,8 @@
-// component, arrow function for fecthing the users
 export default (state = [], action) => {
   switch (action.type) {
-    case 'FETCH_USER':
+    case 'FETCH_POSTS':
+      return action.payload;
+    case 'ADD_POST':
       return [...state, action.payload];
     default:
       return state;

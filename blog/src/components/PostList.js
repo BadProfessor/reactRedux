@@ -10,16 +10,20 @@ class PostList extends React.Component {
     this.props.fetchPostsAndUsers();
   }
 
+  // rendering the list
   renderList() {
+    // maping the posts from the props
     return this.props.posts.map(post => {
       return (
         <div className="item" key={post.id}>
           <i className="large middle aligned icon user" />
           <div className="content">
             <div className="description">
+              {/* title and the body endpoints */}
               <h2>{post.title}</h2>
               <p>{post.body}</p>
             </div>
+            {/* userHeader coponent with the header of the post, putting the user Id as a identifier for the header */}
             <UserHeader userId={post.userId} />
           </div>
         </div>
@@ -33,11 +37,13 @@ class PostList extends React.Component {
   }
 }
 
+// mapp the state to the props, not directly to the state
 const mapStateToProps = state => {
   return { posts: state.posts };
 };
 
 // connect fuction with PostList
+// we are calling the const function mapStatePosts
 export default connect(
   mapStateToProps,
   { fetchPostsAndUsers }

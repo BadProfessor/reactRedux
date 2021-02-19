@@ -7,6 +7,7 @@ import usersReducer from './usersReducer';
 // exporting the object reducers
 // we are posting the objects from two different components
 export default combineReducers({
+  // posts and the users
   posts: postsReducer,
   users: usersReducer
 });
