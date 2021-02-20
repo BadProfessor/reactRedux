@@ -44,6 +44,7 @@ Semantic UI Site:
 https://semantic-ui.com/
 
 Install Node.js
+Google OAuth
 
 FOR PORTFOLIO AND DEPLOYMENT
 Streams:
