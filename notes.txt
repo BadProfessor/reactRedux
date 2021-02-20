@@ -22,6 +22,7 @@ vercel --prod
 npm install --save redux react-redux
 npm install -- save redux-thunk
 npm install -- save lodash
+npm install --save react-router-dom
 
 
 VideoHooks app:
@@ -44,6 +45,5 @@ https://semantic-ui.com/
 
 Install Node.js
 
-
-Udemy: 15
-FCC: 5
+FOR PORTFOLIO AND DEPLOYMENT
+Streams:
