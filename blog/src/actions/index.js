@@ -19,6 +19,7 @@ export const fetchPostsAndUsers = () => async (dispatch, getState) => {
     .uniq()
     // dispatching the result
     .forEach(id => dispatch(fetchUser(id)))
+    // value needed to execute the above functions
     .value();
 };
 
