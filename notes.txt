@@ -14,6 +14,7 @@ import 'semantic-ui-css/semantic.min.css’;
 npm install --save axios
 console.developers.google.com/apis/dashboard
 developers.google.com/youtube/v3/search/list
+developers.google.com/api-client-library/javascript/reference/referencedocs
 npm install axios@0.20.0
 npm install -g vercel
 vercel login
