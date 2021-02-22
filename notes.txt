@@ -16,6 +16,7 @@ console.developers.google.com/apis/dashboard
 developers.google.com/youtube/v3/search/list
 developers.google.com/api-client-library/javascript/reference/referencedocs
 github.com/zalmoxisus/redux-devtools-extension
+redux-form.com
 npm install axios@0.20.0
 npm install -g vercel
 vercel login
@@ -25,6 +26,8 @@ npm install -- save redux react-redux
 npm install -- save redux-thunk
 npm install -- save lodash
 npm install --save react-router-dom
+npm install redux-form --legacy-peer-deps
+localhost:3000?debug_sessions=<some_string>
 
 
 VideoHooks app:
