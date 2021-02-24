@@ -1,60 +1,22 @@
 {
   "streams": [
     {
-      "title": "My Strean",
-      "description": "This is a great stream.",
+      "title": "A test stream",
+      "description": "Test description",
+      "userId": "112571025433377898029",
       "id": 1
     },
     {
-      "title": "Another Stream",
-      "description": "A mega fantastic stream",
+      "title": "Programmatic information",
+      "description": "You should not see this",
+      "userId": "112571025433377898029",
       "id": 2
     },
     {
-      "title": "Another Stream",
-      "description": "A mega fantastic stream",
-      "id": 3
-    },
-    {
-      "title": "Another Stream",
-      "description": "A mega fantastic stream",
-      "id": 4
-    },
-    {
-      "title": "Another Stream",
-      "description": "A mega fantastic stream",
-      "id": 5
-    },
-    {
-      "title": "Another Stream",
-      "description": "A mega fantastic stream",
-      "id": 6
-    },
-    {
-      "title": "Another Stream",
-      "description": "A mega fantastic stream",
-      "id": 7
-    },
-    {
-      "title": "Another Stream",
-      "description": "A mega fantastic stream",
-      "id": 8
-    },
-    {
-      "title": "Another Stream",
-      "description": "A mega fantastic stream",
-      "id": 9
-    },
-    {
-      "title": "Another Stream",
-      "description": "A mega fantastic stream",
-      "id": 10
-    },
-    {
-      "title": "I created this stream",
-      "description": "This was made by me",
+      "title": "Me streaming",
+      "description": "Refactoring",
       "userId": "112571025433377898029",
-      "id": 11
+      "id": 3
     }
   ]
 }
