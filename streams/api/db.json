@@ -1,22 +1,10 @@
 {
   "streams": [
     {
-      "title": "A test stream",
-      "description": "Test description",
+      "title": "New Title",
+      "description": "Another description1",
       "userId": "112571025433377898029",
       "id": 1
-    },
-    {
-      "title": "Programmatic information",
-      "description": "You should not see this",
-      "userId": "112571025433377898029",
-      "id": 2
-    },
-    {
-      "title": "Me streaming",
-      "description": "Refactoring",
-      "userId": "112571025433377898029",
-      "id": 3
     }
   ]
 }
