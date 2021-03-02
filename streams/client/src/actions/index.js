@@ -10,6 +10,8 @@ import {
   EDIT_STREAM,
 } from './types';
 
+// const NodeMediaServer = require('node-media-server');
+
 export const signIn = (userId) => {
   return {
     type: SIGN_IN,
@@ -54,4 +56,5 @@ export const deleteStream = (id) => async (dispatch) => {
   await streams.delete(`/streams/${id}`);
 
   dispatch({ type: DELETE_STREAM, payload: id });
+  history.push('/');
 };
