@@ -10,8 +10,6 @@ import {
   EDIT_STREAM,
 } from './types';
 
-// const NodeMediaServer = require('node-media-server');
-
 export const signIn = (userId) => {
   return {
     type: SIGN_IN,

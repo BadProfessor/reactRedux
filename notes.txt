@@ -5,6 +5,7 @@ npm uninstall -g create-react-app
 npx create-react-app myapp
 cd myapp
 npm i
+npm init
 npm audit fix
 npm start
 CTRL+C
@@ -29,6 +30,8 @@ npm install -- save lodash
 npm install --save react-router-dom
 npm install redux-form --legacy-peer-deps
 npm install --save json-server
+npm install node-media-server
+npm install --save flv.js
 
 
 VideoHooks app:
