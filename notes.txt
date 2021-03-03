@@ -56,4 +56,4 @@ Google OAuth
 
 FOR PORTFOLIO AND DEPLOYMENT
 YouTube App:    https://gracious-kalam-b907f3.netlify.app/
-Streaming App:  
+Streaming App:  Nothing at the moment because of complexity
