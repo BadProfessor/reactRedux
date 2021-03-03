@@ -16,7 +16,7 @@ import axios from 'axios';
 
 // constant value for the key in the environment file
 // it is a publicly available api key so it is safe to share
-const KEY = `${process.env.REACT_APP_ACCESS_KEY}`;
+const KEY = `AIzaSyDf4-4Z763YA8SGUvXmGeelaofclARfo48`;
 
 // we are making a pre-configured instance of axios
 export default axios.create({

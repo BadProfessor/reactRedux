@@ -1,7 +1,6 @@
 Command line:
 node -v
 (npm install -g create-react-app) // don't use
-npm uninstall -g create-react-app
 npx create-react-app myapp
 cd myapp
 npm i
@@ -56,4 +55,5 @@ Install Node.js
 Google OAuth
 
 FOR PORTFOLIO AND DEPLOYMENT
-Streams:
+YouTube App:    https://gracious-kalam-b907f3.netlify.app/
+Streaming App:  
