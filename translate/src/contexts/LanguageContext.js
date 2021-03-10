@@ -1,5 +1,5 @@
 import React from 'react';
 
-const context = React.createContext('english');
+const Context = React.createContext('english');
 
-export default context;
+class LanguageStore extends React.Component {}
